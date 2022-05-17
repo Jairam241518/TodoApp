@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <EditText
+        android:id="@+id/newTaskText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="New Task"
+        android:padding="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/newInitialValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@null"
+        android:hint="Initial Value"
+        android:padding="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium">
+
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/newFinishValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="Finish Value"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:padding="8dp"
+        android:layout_marginTop="100dp">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/newTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newFinishValue"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/transparent"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16dp">
+
+    </Button>
+
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:layout_marginVertical="8dp"
+    android:layout_marginHorizontal="16dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="175dp"
+        android:padding="8dp"
+        tool:text="Sample text">
+
+        <TextView
+            android:id="@+id/taskData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="SampleText">
+
+        </TextView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/subtractProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="68dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="59dp"
+            android:layout_marginBottom="55dp"
+            android:src="@drawable/ic_baseline_arrow_downward_24">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/deleteTask"
+            android:layout_width="wrap_content"
+            android:layout_height="73dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="139dp"
+            android:layout_marginBottom="55dp"
+            android:src="@drawable/ic_baseline_delete_24">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addProgress"
+            android:layout_width="92dp"
+            android:layout_height="78dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="219dp"
+            android:layout_marginBottom="55dp"
+            android:src="@drawable/ic_baseline_arrow_upward_24">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+            android:layout_width="253dp"
+            android:layout_height="51dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="116dp"
+            android:progress="50">
+
+        </ProgressBar>
+
+        <TextView
+            android:id="@+id/taskPercentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="311dp"
+            android:layout_marginLeft="305dp"
+            android:layout_marginTop="126dp"
+            android:text="5/10"
+            android:textSize="24dp">
+
+        </TextView>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
